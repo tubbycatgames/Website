@@ -5,5 +5,6 @@
  */
 
 module.exports = {
+  plugins: ["gatsby-plugin-stylus"]
   /* Your site config here */
 }
