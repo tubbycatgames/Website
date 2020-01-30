@@ -1,17 +1,5 @@
 import React from "react"
-import { Helmet } from "react-helmet"
-import { graphql } from "gatsby"
 
-export default ({ data }) => {
-  return <Helmet title={data.site.siteMetadata.title} />
-}
+import Layout from "../components/layout"
 
-export const query = graphql`
-  query {
-    site {
-      siteMetadata {
-        title
-      }
-    }
-  }
-`
+export default () => <Layout />
