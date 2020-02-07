@@ -1,0 +1,31 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`Mail Signup renders a mailing list signup form 1`] = `
+<div>
+  <h2
+    className="header"
+  >
+    Join our mailing list for game updates!
+  </h2>
+  <form
+    className="form"
+    onSubmit={[Function]}
+  >
+    <input
+      className="input"
+      name="email"
+      onChange={[Function]}
+      placeholder="Enter your email here"
+      required={true}
+      type="email"
+      value=""
+    />
+    <button
+      className="button"
+      type="submit"
+    >
+      Sign up!
+    </button>
+  </form>
+</div>
+`;

@@ -1,0 +1,83 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`Layout renders all site sections and children 1`] = `
+<div
+  className="container"
+>
+  <div
+    className="header"
+  >
+    <div
+      className="bar"
+    >
+      <a
+        href="https://instagram.com/tubbycatgames"
+      >
+        <img
+          alt="Instagram Social Media Icon"
+          className="icon"
+          src="test-file-stub"
+        />
+      </a>
+      <a
+        href="https://twitter.com/tubbycatgames"
+      >
+        <img
+          alt="Twitter Social Media Icon"
+          className="icon"
+          src="test-file-stub"
+        />
+      </a>
+      <a
+        href="https://fb.me/tubbycatgames"
+      >
+        <img
+          alt="Facebook Social Media Icon"
+          className="icon"
+          src="test-file-stub"
+        />
+      </a>
+    </div>
+  </div>
+  <div
+    className="content"
+  >
+    <div>
+      <t>
+        Some Layout Content
+      </t>
+    </div>
+  </div>
+  <div
+    className="footer"
+  >
+    <div>
+      <h2
+        className="header"
+      >
+        Join our mailing list for game updates!
+      </h2>
+      <form
+        className="form"
+        onSubmit={[Function]}
+      >
+        <input
+          className="input"
+          name="email"
+          onChange={[Function]}
+          placeholder="Enter your email here"
+          required={true}
+          type="email"
+          value=""
+        />
+        <button
+          className="button"
+          type="submit"
+        >
+          Sign up!
+        </button>
+      </form>
+    </div>
+  </div>
+</div>
+`;

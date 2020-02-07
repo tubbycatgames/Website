@@ -1,0 +1,35 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`Social Bar renders a set of linked up social icons 1`] = `
+<div
+  className="bar"
+>
+  <a
+    href="https://instagram.com/tubbycatgames"
+  >
+    <img
+      alt="Instagram Social Media Icon"
+      className="icon"
+      src="test-file-stub"
+    />
+  </a>
+  <a
+    href="https://twitter.com/tubbycatgames"
+  >
+    <img
+      alt="Twitter Social Media Icon"
+      className="icon"
+      src="test-file-stub"
+    />
+  </a>
+  <a
+    href="https://fb.me/tubbycatgames"
+  >
+    <img
+      alt="Facebook Social Media Icon"
+      className="icon"
+      src="test-file-stub"
+    />
+  </a>
+</div>
+`;
