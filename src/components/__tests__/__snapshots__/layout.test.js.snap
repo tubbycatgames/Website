@@ -11,10 +11,19 @@ exports[`Layout renders all site sections and children 1`] = `
       className="bar"
     >
       <a
-        href="https://instagram.com/tubbycatgames"
+        href="https://tubbycatgames.itch.io/"
       >
         <img
-          alt="Instagram Social Media Icon"
+          alt="Itch Page Icon"
+          className="icon"
+          src="test-file-stub"
+        />
+      </a>
+      <a
+        href="https://gamejolt.com/@tubbycatgames"
+      >
+        <img
+          alt="Game Jolt Page Icon"
           className="icon"
           src="test-file-stub"
         />
@@ -24,6 +33,15 @@ exports[`Layout renders all site sections and children 1`] = `
       >
         <img
           alt="Twitter Social Media Icon"
+          className="icon"
+          src="test-file-stub"
+        />
+      </a>
+      <a
+        href="https://instagram.com/tubbycatgames"
+      >
+        <img
+          alt="Instagram Social Media Icon"
           className="icon"
           src="test-file-stub"
         />

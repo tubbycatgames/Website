@@ -2,7 +2,7 @@ import React from "react"
 
 // import Discord from "../images/social/Discord.png"
 import Facebook from "../images/social/Facebook.png"
-// import GameJolt from "../images/social/GameJolt.png"
+import GameJolt from "../images/social/GameJolt.png"
 import Instagram from "../images/social/Instagram.png"
 import Itch from "../images/social/Itch.png"
 import Twitter from "../images/social/Twitter.png"
@@ -21,20 +21,20 @@ const socialData = [
     href: "https://tubbycatgames.itch.io/",
     src: Itch,
   },
-  // {
-  //   alt: "Game Jolt Page Icon",
-  //   href: "https://gamejolt.com/@tubbycatgames",
-  //   src: GameJolt,
-  // },
   {
-    alt: "Instagram Social Media Icon",
-    href: "https://instagram.com/tubbycatgames",
-    src: Instagram,
+    alt: "Game Jolt Page Icon",
+    href: "https://gamejolt.com/@tubbycatgames",
+    src: GameJolt,
   },
   {
     alt: "Twitter Social Media Icon",
     href: "https://twitter.com/tubbycatgames",
     src: Twitter,
+  },
+  {
+    alt: "Instagram Social Media Icon",
+    href: "https://instagram.com/tubbycatgames",
+    src: Instagram,
   },
   {
     alt: "Facebook Social Media Icon",
