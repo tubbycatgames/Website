@@ -82,7 +82,7 @@ exports[`Layout renders all site sections and children 1`] = `
       <h2
         className="header"
       >
-        Join our mailing list for updates!
+        Join our mailing list for game updates!
       </h2>
       <form
         className="form"
