@@ -5,7 +5,7 @@ exports[`Mail Signup renders a mailing list signup form 1`] = `
   <h2
     className="header"
   >
-    Join our mailing list for game updates!
+    Join our mailing list for updates!
   </h2>
   <form
     className="form"

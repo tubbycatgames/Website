@@ -45,7 +45,7 @@ export default class MailSignup extends Component {
     return (
       <div>
         <h2 className={styles.header}>
-          Join our mailing list for game updates!
+          Join our mailing list for updates!
         </h2>
         {error}
         {result}
