@@ -21,6 +21,6 @@ describe("Layout", () => {
         </div>
       </Layout>
     )
-    expect(tree.toJSON()).toMatchSnapshot();
+    expect(tree.toJSON()).toMatchSnapshot()
   })
 })

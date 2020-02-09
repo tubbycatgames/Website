@@ -9,6 +9,12 @@ module.exports = {
           "https://tubbycatgames.us4.list-manage.com/subscribe/post?u=02fe308fb2accb1f3454808f3&amp;id=8d0948f68a",
       },
     },
+    {
+      resolve: "gatsby-plugin-typography",
+      options: {
+        pathToConfiguModule: "src/utils/typography",
+      },
+    },
   ],
   siteMetadata: {
     description:
