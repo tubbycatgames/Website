@@ -55,6 +55,15 @@ exports[`Layout renders all site sections and children 1`] = `
           src="test-file-stub"
         />
       </a>
+      <a
+        href="https://www.youtube.com/channel/UC_6l3SdhVjdtTd2DnHK2JbQ"
+      >
+        <img
+          alt="YouTube Channel Icon"
+          className="icon"
+          src="test-file-stub"
+        />
+      </a>
     </div>
   </div>
   <div

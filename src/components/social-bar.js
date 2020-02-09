@@ -6,7 +6,7 @@ import GameJolt from "../images/social/GameJolt.png"
 import Instagram from "../images/social/Instagram.png"
 import Itch from "../images/social/Itch.png"
 import Twitter from "../images/social/Twitter.png"
-// import YouTube from "../images/social/YouTube.png"
+import YouTube from "../images/social/YouTube.png"
 
 import styles from "./social-bar.module.styl"
 
@@ -41,11 +41,11 @@ const socialData = [
     href: "https://fb.me/tubbycatgames",
     src: Facebook,
   },
-  // {
-  //   alt: "YouTube Channel Icon",
-  //   href: "https://www.youtube.com/channel/UC_6l3SdhVjdtTd2DnHK2JbQ",
-  //   src: YouTube,
-  // },
+  {
+    alt: "YouTube Channel Icon",
+    href: "https://www.youtube.com/channel/UC_6l3SdhVjdtTd2DnHK2JbQ",
+    src: YouTube,
+  },
 ]
 
 const SocialIcon = ({ alt, href, src }) => {
