@@ -1,23 +1,39 @@
 .container
-    height 100%
+    align-items center
+    background-color #003F39
     display flex
     flex-direction column
-    background-color #003F39
+    height 100%
 
-.header
-    align-self center
+    border-radius = 10px
 
-.content
-    flex 1
+    .header
+        display: flex;
+        align-items: center;
+        background-color #94ECBE
+        border-radius border-radius
 
-    background-image url('../images/Logo.png')
-    background-position center
-    background-repeat no-repeat
-    background-size contain
+        icon_size = 24px
 
-.footer
-    align-self center
+        .icon
+            max-height icon_size
+            max-width icon_size
+            padding (icon_size / 4)px
+        
+        .logo
+            max-height icon_size * 2
+            max-width icon_size * 2
+            padding (icon_size / 2)px
 
-    background-color #90EE90
-    border-radius 10px 10px 0px 0px
-    padding 10px;
+    .content
+        background-color #FFCDB5
+        border-radius: border-radius
+        flex 1
+        margin 10px
+        padding 10px
+        text-align center
+
+    .footer
+        background-color #90EE90
+        border-radius border-radius border-radius 0px 0px
+        padding 10px;

@@ -1,4 +1,12 @@
+import styles from "./layout.module.styl"
+
 export default [
+  {
+    alt: "Tubby Cat Games Icon",
+    href: "https://tubbycatgames.com",
+    src: require("../images/Logo.png"),
+    style: styles.logo,
+  },
   {
     alt: "Itch Page Icon",
     href: "https://tubbycatgames.itch.io/",
