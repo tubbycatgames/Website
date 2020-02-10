@@ -4,6 +4,7 @@
     display flex
     flex-direction column
     height 100%
+    padding 10px
 
     border-radius = 10px
 
@@ -19,18 +20,21 @@
             max-height icon_size
             max-width icon_size
             padding (icon_size / 4)px
+
+        logo_size = icon_size * 2
         
         .logo
-            max-height icon_size * 2
-            max-width icon_size * 2
-            padding (icon_size / 2)px
+            max-height logo_size
+            max-width logo_size
+            padding (logo_size / 4)px
 
     .content
         background-color #FFCDB5
         border-radius: border-radius
         flex 1
-        margin 10px
         padding 10px
+        margin-top 10px
+        margin-bottom 10px
         text-align center
 
     .footer
