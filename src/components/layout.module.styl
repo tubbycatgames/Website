@@ -16,18 +16,20 @@
         border-radius border-radius
 
         icon_size = 24px
+        icon_padding = (icon_size / 4)px
 
         .icon
             max-height icon_size
             max-width icon_size
-            padding (icon_size / 4)px
+            padding icon_padding
 
         logo_size = icon_size * 2
         
         .logo
             max-height logo_size
             max-width logo_size
-            padding (logo_size / 4)px
+            padding (icon_size / 4)px
+            padding-right = (logo_size / 4)px
 
     .content
         background-color #FFCDB5
