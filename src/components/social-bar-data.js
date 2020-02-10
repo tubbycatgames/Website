@@ -11,7 +11,7 @@ export default [
   },
   {
     alt: "GitHub Page Icon",
-    heref: "https://github.com/tubbycatgames",
+    href: "https://github.com/tubbycatgames",
     src: require("../images/social/GitHub.png"),
   },
   {
