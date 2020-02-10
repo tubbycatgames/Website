@@ -1,6 +1,6 @@
 import React from "react"
 
-// import Discord from "../images/social/Discord.png"
+import Discord from "../images/social/Discord.png"
 import Facebook from "../images/social/Facebook.png"
 import GameJolt from "../images/social/GameJolt.png"
 import GitHub from "../images/social/GitHub.png"
@@ -12,11 +12,6 @@ import YouTube from "../images/social/YouTube.png"
 import styles from "./social-bar.module.styl"
 
 const socialData = [
-  // {
-  //   alt: "Discord Social Media Icon",
-  //   href: "https://discord.gg/SDRavf",
-  //   src: Discord,
-  // },
   {
     alt: "Itch Page Icon",
     href: "https://tubbycatgames.itch.io/",
@@ -31,6 +26,11 @@ const socialData = [
     alt: "GitHub Page Icon",
     heref: "https://github.com/tubbycatgames",
     src: GitHub,
+  },
+  {
+    alt: "Discord Social Media Icon",
+    href: "https://discord.gg/vyh5XY",
+    src: Discord,
   },
   {
     alt: "Twitter Social Media Icon",

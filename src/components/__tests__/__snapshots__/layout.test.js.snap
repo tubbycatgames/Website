@@ -36,6 +36,15 @@ exports[`Layout renders all site sections and children 1`] = `
         />
       </a>
       <a
+        href="https://discord.gg/vyh5XY"
+      >
+        <img
+          alt="Discord Social Media Icon"
+          className="icon"
+          src="test-file-stub"
+        />
+      </a>
+      <a
         href="https://twitter.com/tubbycatgames"
       >
         <img
