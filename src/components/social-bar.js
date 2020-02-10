@@ -3,6 +3,7 @@ import React from "react"
 // import Discord from "../images/social/Discord.png"
 import Facebook from "../images/social/Facebook.png"
 import GameJolt from "../images/social/GameJolt.png"
+import GitHub from "../images/social/GitHub.png"
 import Instagram from "../images/social/Instagram.png"
 import Itch from "../images/social/Itch.png"
 import Twitter from "../images/social/Twitter.png"
@@ -25,6 +26,11 @@ const socialData = [
     alt: "Game Jolt Page Icon",
     href: "https://gamejolt.com/@tubbycatgames",
     src: GameJolt,
+  },
+  {
+    alt: "GitHub Page Icon",
+    heref: "https://github.com/tubbycatgames",
+    src: GitHub,
   },
   {
     alt: "Twitter Social Media Icon",

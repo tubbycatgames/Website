@@ -28,6 +28,13 @@ exports[`Layout renders all site sections and children 1`] = `
           src="test-file-stub"
         />
       </a>
+      <a>
+        <img
+          alt="GitHub Page Icon"
+          className="icon"
+          src="test-file-stub"
+        />
+      </a>
       <a
         href="https://twitter.com/tubbycatgames"
       >
