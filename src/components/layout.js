@@ -5,7 +5,7 @@ import styles from "./layout.module.styl"
 import MailSignup from "./mail-signup"
 import headerBarData from "./header-bar-data"
 
-export default ({ children }) => {
+const Layout = ({ children }) => {
   const headerIcons = headerBarData.map(({ alt, href, src, style }, index) => {
     return (
       <a href={href} key={`headerBarIcon${index}`}>
@@ -25,3 +25,5 @@ export default ({ children }) => {
     </div>
   )
 }
+
+export default Layout

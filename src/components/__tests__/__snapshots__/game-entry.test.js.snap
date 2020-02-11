@@ -1,0 +1,31 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`Game Entry renders a game entry for a game listing 1`] = `
+<div>
+  <a
+    href="itch.io"
+  >
+    <h2>
+      Da Game
+    </h2>
+  </a>
+  <ul
+    className="list"
+  >
+    <li>
+      <a
+        href="github.com"
+      >
+        Source Code
+      </a>
+    </li>
+    <li>
+      <a
+        href="youtube.com"
+      >
+        Playthrough Video
+      </a>
+    </li>
+  </ul>
+</div>
+`;

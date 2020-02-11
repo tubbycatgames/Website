@@ -11,7 +11,7 @@ export default ({ data }) => (
 
 export const query = graphql`
   query {
-    markdownRemark(frontmatter: { name: { eq: "about" } }) {
+    markdownRemark(frontmatter: { type: { eq: "about" } }) {
       html
     }
   }

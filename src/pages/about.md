@@ -1,5 +1,5 @@
 ---
-name: "about"
+type: about
 ---
 
 # Tubby Cat Games
