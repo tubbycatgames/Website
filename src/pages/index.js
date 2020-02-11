@@ -1,11 +1,18 @@
 import React from "react"
+import { graphql } from "gatsby"
 
 import Layout from "../components/layout"
 
-export default () => (
+export default ({ data }) => (
   <Layout>
-    <h1>Tubby Cat Games</h1>
-    <h2>A Philadelphia game studio</h2>
-    <h2>Games created by Phil Simmons and associates</h2>
+    <span dangerouslySetInnerHTML={{ __html: data.markdownRemark.html }} />
   </Layout>
 )
+
+export const query = graphql`
+  query {
+    markdownRemark(frontmatter: { name: { eq: "about" } }) {
+      html
+    }
+  }
+`
