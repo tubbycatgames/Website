@@ -22,8 +22,8 @@ const GameEntry = ({ description, icon, name, play, source, video }) => {
       </a>
       <p>{description}</p>
       <div className={styles.specifics}>
-        <a href={play}>
-          <Img alt={`${name} Icon`} fixed={icon.childImageSharp.fixed} />
+        <a href={play} className={styles.icon}>
+          <Img alt={`${name} Icon`} fluid={icon.childImageSharp.fluid} />
         </a>
         <ul className={styles.links}>
           <li>

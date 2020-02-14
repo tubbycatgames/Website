@@ -7,9 +7,9 @@ describe("Game Entry", () => {
   it("renders a game entry for a game listing", () => {
     const icon = {
       childImageSharp: {
-        fixed: {
-          height: 200,
-          width: 200,
+        fluid: {
+          aspectRatio: 1,
+          sizes: "(max-width: 300px) 100vw, 300px",
           src: "image",
           srcSet: "image2",
         },
