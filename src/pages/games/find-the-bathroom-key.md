@@ -1,7 +1,7 @@
 ---
 type: game
 creation: 2018-04-01
-description: Steal the office bathroom keys before the workers arrive!
+description: Steal the Office Bathroom Keys Before the Workers Arrive!
 icon: ../../images/games/FindTheBathroomKey.png
 name: Find The Bathroom Key
 source: https://github.com/tubbycatgames/FindTheBathroomKey

@@ -1,7 +1,7 @@
 ---
 type: game
 creation: 2018-11-29
-description: Find out how to to Survive
+description: Figure Out How To Survive
 icon: ../../images/games/TheHorde.png
 name: The Horde
 source: null
