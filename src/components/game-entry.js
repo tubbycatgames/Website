@@ -3,16 +3,7 @@ import Img from "gatsby-image"
 
 import styles from "./game-entry.module.styl"
 
-const GameEntry = ({
-  creation,
-  description,
-  icon,
-  name,
-  play,
-  source,
-  youtube,
-}) => {
-  console.log(icon)
+const GameEntry = ({ description, icon, name, play, source, youtube }) => {
   return (
     <div className={styles.container}>
       <a href={play}>
@@ -24,7 +15,6 @@ const GameEntry = ({
           <Img
             alt={`${name} Icon`}
             fixed={icon.childImageSharp.fixed}
-            objectPosition="center center"
           />
         </a>
         <ul className={styles.links}>
