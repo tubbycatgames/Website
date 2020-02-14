@@ -1,6 +1,6 @@
 ---
 type: game
-creation: 2018-10-01
+creation: 2018-10-21
 description: Adventure around town meeting people
 icon: ../../images/games/IdentityCrisis.jpg
 name: Identity Crisis
