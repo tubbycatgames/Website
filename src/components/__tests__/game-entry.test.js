@@ -24,7 +24,7 @@ describe("Game Entry", () => {
         name="Da Game"
         play="itch.io"
         source="github.com"
-        youtube="youtube.com"
+        video="youtube.com"
       />
     )
     expect(tree.toJSON()).toMatchSnapshot()

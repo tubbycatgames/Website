@@ -6,7 +6,7 @@ icon: ../../images/games/FindTheBathroomKey.png
 name: Find The Bathroom Key
 source: https://github.com/tubbycatgames/FindTheBathroomKey
 play: https://tubbycatgames.itch.io/find-the-bathroom-key
-youtube: https://youtu.be/EAzVVDTeBK4
+video: https://youtu.be/EAzVVDTeBK4
 ---
 
 Find the Bathroom Key came out of a constant problem at my previous job.

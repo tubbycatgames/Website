@@ -3,7 +3,18 @@ import Img from "gatsby-image"
 
 import styles from "./game-entry.module.styl"
 
-const GameEntry = ({ description, icon, name, play, source, youtube }) => {
+const GameEntry = ({ description, icon, name, play, source, video }) => {
+  const sourceEntry = source ? (
+    <li>
+      <a href={source}>Source Code</a>
+    </li>
+  ) : null
+  const videoEntry = video ? (
+    <li>
+      <a href={video}>Playthrough Video</a>
+    </li>
+  ) : null
+
   return (
     <div className={styles.container}>
       <a href={play}>
@@ -12,21 +23,14 @@ const GameEntry = ({ description, icon, name, play, source, youtube }) => {
       <p>{description}</p>
       <div className={styles.specifics}>
         <a href={play}>
-          <Img
-            alt={`${name} Icon`}
-            fixed={icon.childImageSharp.fixed}
-          />
+          <Img alt={`${name} Icon`} fixed={icon.childImageSharp.fixed} />
         </a>
         <ul className={styles.links}>
           <li>
             <a href={play}>Play the Game!</a>
           </li>
-          <li>
-            <a href={source}>Source Code</a>
-          </li>
-          <li>
-            <a href={youtube}>Playthrough Video</a>
-          </li>
+          {sourceEntry}
+          {videoEntry}
         </ul>
       </div>
     </div>
