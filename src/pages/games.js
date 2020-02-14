@@ -18,14 +18,25 @@ export default ({ data }) => {
 
 export const query = graphql`
   {
-    allMarkdownRemark(filter: { frontmatter: { type: { eq: "game" } } }) {
+    allMarkdownRemark(
+      filter: { frontmatter: { type: { eq: "game" } } }
+      sort: { fields: frontmatter___creation, order: ASC }
+    ) {
       edges {
         node {
           frontmatter {
-            name
-            source
             creation
+            description
+            icon {
+              childImageSharp {
+                fixed(width: 300) {
+                  ...GatsbyImageSharpFixed
+                }
+              }
+            }
+            name
             play
+            source
             youtube
           }
         }

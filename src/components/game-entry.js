@@ -1,21 +1,44 @@
 import React from "react"
+import Img from "gatsby-image"
 
 import styles from "./game-entry.module.styl"
 
-const GameEntry = ({ name, source, creation, play, youtube }) => {
+const GameEntry = ({
+  creation,
+  description,
+  icon,
+  name,
+  play,
+  source,
+  youtube,
+}) => {
+  console.log(icon)
   return (
-    <div>
+    <div className={styles.container}>
       <a href={play}>
-        <h2>{name}</h2>
+        <h2 className={styles.name}>{name}</h2>
       </a>
-      <ul className={styles.list}>
-        <li>
-          <a href={source}>Source Code</a>
-        </li>
-        <li>
-          <a href={youtube}>Playthrough Video</a>
-        </li>
-      </ul>
+      <p>{description}</p>
+      <div className={styles.specifics}>
+        <a href={play}>
+          <Img
+            alt={`${name} Icon`}
+            fixed={icon.childImageSharp.fixed}
+            objectPosition="center center"
+          />
+        </a>
+        <ul className={styles.links}>
+          <li>
+            <a href={play}>Play the Game!</a>
+          </li>
+          <li>
+            <a href={source}>Source Code</a>
+          </li>
+          <li>
+            <a href={youtube}>Playthrough Video</a>
+          </li>
+        </ul>
+      </div>
     </div>
   )
 }
