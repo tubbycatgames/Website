@@ -6,7 +6,7 @@ icon: ../../images/games/TheHorde.png
 name: The Horde
 source: null
 play: https://kotarofujita.itch.io/the-horde
-video: null
+video: https://www.youtube.com/watch?v=4piA8VZmS50
 ---
 
 Democracy Jam 2018
