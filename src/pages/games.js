@@ -13,7 +13,10 @@ export default ({ data }) => {
   return (
     <Layout>
       <h1 className={styles.header}>Games</h1>
+      <div className={styles.entries}>
+
       {entries}
+      </div>
     </Layout>
   )
 }
