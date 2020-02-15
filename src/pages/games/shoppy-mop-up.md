@@ -1,7 +1,7 @@
 ---
 type: game
 creation: 2019-11-16
-description: Get All The Right Things Without Knowing What They Were
+description: Recover Your Things Without Knowing What They Were
 icon: ../../images/games/ShoppyMopUp.png
 name: Shoppy Mop Up
 source: https://github.com/tubbycatgames/groceryCollision
