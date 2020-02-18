@@ -4,36 +4,29 @@ import { Link } from "gatsby"
 
 import styles from "./game-entry.module.styl"
 
-const GameEntry = ({ description, icon, name, play, slug, source, video }) => {
-  const sourceEntry = source ? (
-    <li>
-      <a href={source}>Source Code</a>
-    </li>
+const OptionalLink = ({ children, href }) => {
+  return href ? (
+    <a href={href}>
+      <p>{children}</p>
+    </a>
   ) : null
-  const videoEntry = video ? (
-    <li>
-      <a href={video}>Playthrough Video</a>
-    </li>
-  ) : null
+}
 
+const GameEntry = ({ description, icon, name, play, slug, source, video }) => {
   return (
     <div className={styles.container}>
       <Link to={slug}>
-        <h2 className={styles.name}>{name}</h2>
+        <h2>{name}</h2>
       </Link>
-      <p>{description}</p>
-      <div className={styles.specifics}>
-        <Link to={slug} className={styles.icon}>
-          <Img alt={`${name} Icon`} fluid={icon.childImageSharp.fluid} />
-        </Link>
-        <ul className={styles.links}>
-          <li>
-            <a href={play}>Play the Game!</a>
-          </li>
-          {sourceEntry}
-          {videoEntry}
-        </ul>
+      <p className={styles.description}>{description}</p>
+      <div className={styles.links}>
+        <OptionalLink href={play}>Play the Game!</OptionalLink>
+        <OptionalLink href={source}>Source Code</OptionalLink>
+        <OptionalLink href={video}>Playthrough Video</OptionalLink>
       </div>
+      <Link to={slug}>
+        <Img alt={`${name} Icon`} fluid={icon.childImageSharp.fluid} />
+      </Link>
     </div>
   )
 }

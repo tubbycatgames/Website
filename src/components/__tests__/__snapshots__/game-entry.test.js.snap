@@ -7,101 +7,96 @@ exports[`Game Entry renders a game entry for a game listing 1`] = `
   <a
     href="/my/internal/link.html"
   >
-    <h2
-      className="name"
-    >
+    <h2>
       Da Game
     </h2>
   </a>
-  <p>
+  <p
+    className="description"
+  >
     What a game!
   </p>
   <div
-    className="specifics"
+    className="links"
   >
     <a
-      className="icon"
-      href="/my/internal/link.html"
+      href="itch.io"
+    >
+      <p>
+        Play the Game!
+      </p>
+    </a>
+    <a
+      href="github.com"
+    >
+      <p>
+        Source Code
+      </p>
+    </a>
+    <a
+      href="youtube.com"
+    >
+      <p>
+        Playthrough Video
+      </p>
+    </a>
+  </div>
+  <a
+    href="/my/internal/link.html"
+  >
+    <div
+      className=" gatsby-image-wrapper"
+      style={
+        Object {
+          "overflow": "hidden",
+          "position": "relative",
+        }
+      }
     >
       <div
-        className=" gatsby-image-wrapper"
+        aria-hidden={true}
         style={
           Object {
-            "overflow": "hidden",
-            "position": "relative",
+            "paddingBottom": "100%",
+            "width": "100%",
           }
         }
-      >
-        <div
-          aria-hidden={true}
+      />
+      <picture>
+        <source
+          sizes="(max-width: 300px) 100vw, 300px"
+          srcSet="image2"
+        />
+        <img
+          alt="Da Game Icon"
+          loading="lazy"
+          onLoad={[Function]}
+          sizes="(max-width: 300px) 100vw, 300px"
+          src="image"
+          srcSet="image2"
           style={
             Object {
-              "paddingBottom": "100%",
+              "height": "100%",
+              "left": 0,
+              "objectFit": "cover",
+              "objectPosition": "center",
+              "opacity": 0,
+              "position": "absolute",
+              "top": 0,
+              "transition": "opacity 500ms",
               "width": "100%",
             }
           }
         />
-        <picture>
-          <source
-            sizes="(max-width: 300px) 100vw, 300px"
-            srcSet="image2"
-          />
-          <img
-            alt="Da Game Icon"
-            loading="lazy"
-            onLoad={[Function]}
-            sizes="(max-width: 300px) 100vw, 300px"
-            src="image"
-            srcSet="image2"
-            style={
-              Object {
-                "height": "100%",
-                "left": 0,
-                "objectFit": "cover",
-                "objectPosition": "center",
-                "opacity": 0,
-                "position": "absolute",
-                "top": 0,
-                "transition": "opacity 500ms",
-                "width": "100%",
-              }
-            }
-          />
-        </picture>
-        <noscript
-          dangerouslySetInnerHTML={
-            Object {
-              "__html": "<picture><source srcset=\\"image2\\" sizes=\\"(max-width: 300px) 100vw, 300px\\" /><img loading=\\"lazy\\" sizes=\\"(max-width: 300px) 100vw, 300px\\" srcset=\\"image2\\" src=\\"image\\" alt=\\"Da Game Icon\\" style=\\"position:absolute;top:0;left:0;opacity:1;width:100%;height:100%;object-fit:cover;object-position:center\\"/></picture>",
-            }
+      </picture>
+      <noscript
+        dangerouslySetInnerHTML={
+          Object {
+            "__html": "<picture><source srcset=\\"image2\\" sizes=\\"(max-width: 300px) 100vw, 300px\\" /><img loading=\\"lazy\\" sizes=\\"(max-width: 300px) 100vw, 300px\\" srcset=\\"image2\\" src=\\"image\\" alt=\\"Da Game Icon\\" style=\\"position:absolute;top:0;left:0;opacity:1;width:100%;height:100%;object-fit:cover;object-position:center\\"/></picture>",
           }
-        />
-      </div>
-    </a>
-    <ul
-      className="links"
-    >
-      <li>
-        <a
-          href="itch.io"
-        >
-          Play the Game!
-        </a>
-      </li>
-      <li>
-        <a
-          href="github.com"
-        >
-          Source Code
-        </a>
-      </li>
-      <li>
-        <a
-          href="youtube.com"
-        >
-          Playthrough Video
-        </a>
-      </li>
-    </ul>
-  </div>
+        }
+      />
+    </div>
+  </a>
 </div>
 `;
