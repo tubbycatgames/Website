@@ -23,6 +23,7 @@ describe("Game Entry", () => {
         icon={icon}
         name="Da Game"
         play="itch.io"
+        slug="/my/internal/link.html"
         source="github.com"
         video="youtube.com"
       />

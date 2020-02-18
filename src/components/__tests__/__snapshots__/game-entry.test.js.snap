@@ -5,7 +5,7 @@ exports[`Game Entry renders a game entry for a game listing 1`] = `
   className="container"
 >
   <a
-    href="itch.io"
+    href="/my/internal/link.html"
   >
     <h2
       className="name"
@@ -21,7 +21,7 @@ exports[`Game Entry renders a game entry for a game listing 1`] = `
   >
     <a
       className="icon"
-      href="itch.io"
+      href="/my/internal/link.html"
     >
       <div
         className=" gatsby-image-wrapper"

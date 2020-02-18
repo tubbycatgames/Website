@@ -8,15 +8,18 @@ import styles from "./games.module.styl"
 
 export default ({ data }) => {
   const entries = data.allMarkdownRemark.edges.map((edge, index) => {
-    return <GameEntry {...edge.node.frontmatter} key={"gameEntry" + index} />
+    return (
+      <GameEntry
+        {...edge.node.fields}
+        {...edge.node.frontmatter}
+        key={"gameEntry" + index}
+      />
+    )
   })
   return (
     <Layout>
       <h1 className={styles.header}>Games</h1>
-      <div className={styles.entries}>
-
-      {entries}
-      </div>
+      <div className={styles.entries}>{entries}</div>
     </Layout>
   )
 }
@@ -29,6 +32,9 @@ export const query = graphql`
     ) {
       edges {
         node {
+          fields {
+            slug
+          }
           frontmatter {
             creation
             description

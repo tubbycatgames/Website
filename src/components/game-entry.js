@@ -1,9 +1,10 @@
 import React from "react"
 import Img from "gatsby-image"
+import { Link } from "gatsby"
 
 import styles from "./game-entry.module.styl"
 
-const GameEntry = ({ description, icon, name, play, source, video }) => {
+const GameEntry = ({ description, icon, name, play, slug, source, video }) => {
   const sourceEntry = source ? (
     <li>
       <a href={source}>Source Code</a>
@@ -17,14 +18,14 @@ const GameEntry = ({ description, icon, name, play, source, video }) => {
 
   return (
     <div className={styles.container}>
-      <a href={play}>
+      <Link to={slug}>
         <h2 className={styles.name}>{name}</h2>
-      </a>
+      </Link>
       <p>{description}</p>
       <div className={styles.specifics}>
-        <a href={play} className={styles.icon}>
+        <Link to={slug} className={styles.icon}>
           <Img alt={`${name} Icon`} fluid={icon.childImageSharp.fluid} />
-        </a>
+        </Link>
         <ul className={styles.links}>
           <li>
             <a href={play}>Play the Game!</a>
