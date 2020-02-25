@@ -6,7 +6,7 @@ icon: ../../images/games/IdentityCrisis.jpg
 name: Identity Crisis
 source: null
 play: https://gamejolt.com/games/identity/374768
-video: null
+video: https://youtu.be/nk6dbbFCkuI
 ---
 
 Identity Crisis was created for the [2018 ADL Game Jam](http://jams.gamejolt.io/adljam) for the theme of Identity.
