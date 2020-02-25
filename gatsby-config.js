@@ -6,6 +6,18 @@ module.exports = {
         lang: "en",
       },
     },
+    {
+      resolve: "gatsby-plugin-manifest",
+      options: {
+        background_color: "#003F39",
+        display: "standalone",
+        icon: "src/images/Logo.png",
+        name: "Tubby Cat Games",
+        short_name: "TCD",
+        start_url: "/",
+        theme_color: "#003F39",
+      },
+    },
     "gatsby-plugin-react-helmet",
     "gatsby-plugin-sharp",
     "gatsby-plugin-stylus",
