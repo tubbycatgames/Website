@@ -51,6 +51,7 @@ export default class MailSignup extends Component {
         {result}
         <form className={styles.form} onSubmit={this.handleSubmit}>
           <input
+            aria-label="Mailing List Signup Email"
             className={styles.input}
             name="email"
             onChange={this.handleEmailChange}

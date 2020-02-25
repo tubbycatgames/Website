@@ -12,6 +12,7 @@ exports[`Mail Signup renders a mailing list signup form 1`] = `
     onSubmit={[Function]}
   >
     <input
+      aria-label="Mailing List Signup Email"
       className="input"
       name="email"
       onChange={[Function]}

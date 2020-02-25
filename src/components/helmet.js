@@ -3,12 +3,13 @@ import React from "react"
 import { StaticQuery, graphql } from "gatsby"
 
 const render = data => {
-  return (
-    <Helmet
-      description={data.site.siteMetadata.description}
-      title={data.site.siteMetadata.title}
-    />
-  )
+  const meta = [
+    {
+      name: "description",
+      content: data.site.siteMetadata.description,
+    },
+  ]
+  return <Helmet meta={meta} title={data.site.siteMetadata.title} />
 }
 
 const query = graphql`
