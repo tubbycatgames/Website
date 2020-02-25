@@ -5,6 +5,7 @@ export default () => {
     render({
       site: {
         siteMetadata: {
+          author: "Tubby Cat Games, LLC.",
           description: "Tubby Cat Games Helmet Tester",
           title: `TCG Test`,
         },

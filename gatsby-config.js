@@ -47,8 +47,9 @@ module.exports = {
     "gatsby-transformer-sharp",
   ],
   siteMetadata: {
+    author: "Tubby Cat Games, LLC.",
     description:
-      "Business Website for Tubby Cat Games, LLC. A Philadelphiad video game company",
+      "Business Website for Tubby Cat Games, LLC. A Philadelphia video game company",
     title: "Tubby Cat Games",
   },
 }
