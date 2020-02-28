@@ -3,13 +3,11 @@ import { graphql, Link } from "gatsby"
 
 import MarkdownEntryList from "../components/markdown-entry-list"
 
-const BlogPost = ({ title, slug }) => {
-  return (
-    <Link to={slug}>
-      <h1>{title}</h1>
-    </Link>
-  )
-}
+const BlogPost = ({ title, slug }) => (
+  <Link to={slug}>
+    <h1>{title}</h1>
+  </Link>
+)
 
 const BlogPostList = MarkdownEntryList(BlogPost)
 
