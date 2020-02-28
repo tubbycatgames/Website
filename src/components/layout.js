@@ -1,17 +1,14 @@
 import React from "react"
 
+import HeaderBarIcon from "./header-bar-icon"
 import Helmet from "./helmet"
-import styles from "./layout.module.styl"
 import MailSignup from "./mail-signup"
 import headerBarData from "./header-bar-data"
+import styles from "./layout.module.styl"
 
 const Layout = ({ children }) => {
-  const headerIcons = headerBarData.map(({ alt, href, src, style }, index) => {
-    return (
-      <a href={href} key={`headerBarIcon${index}`}>
-        <img alt={alt} className={style || styles.icon} src={src} />
-      </a>
-    )
+  const headerIcons = headerBarData.map((data, index) => {
+    return <HeaderBarIcon {...data} key={`header-bar-icon-${index}`} />
   })
 
   return (

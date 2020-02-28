@@ -3,15 +3,16 @@ import React from "react"
 import Layout from "./layout"
 import styles from "./markdown-entry-list.module.styl"
 
-const MarkdownEntryList = EntryComponent => {
+export default EntryComponent => {
   return ({ data, title }) => {
     const entries = data.allMarkdownRemark.edges.map(({ node }, index) => {
-      const props = {
-        ...node.fields,
-        ...node.frontmatter,
-        key: "markdown-entry-" + index,
-      }
-      return <EntryComponent {...props} />
+      return (
+        <EntryComponent
+          {...node.fields}
+          {...node.frontmatter}
+          key={"markdown-entry-" + index}
+        />
+      )
     })
 
     return (
@@ -22,5 +23,3 @@ const MarkdownEntryList = EntryComponent => {
     )
   }
 }
-
-export default MarkdownEntryList

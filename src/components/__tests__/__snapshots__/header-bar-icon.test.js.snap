@@ -1,0 +1,13 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`Header Bar Icon renders a header bar icon 1`] = `
+<a
+  href="Some madeup place"
+>
+  <img
+    alt="Some Alt Text!"
+    className="A style override!"
+    src="some-image.jpg"
+  />
+</a>
+`;

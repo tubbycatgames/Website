@@ -1,4 +1,4 @@
-import styles from "./layout.module.styl"
+import styles from "./header-bar-icon.module.styl"
 
 export default [
   {
