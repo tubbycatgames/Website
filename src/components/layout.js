@@ -7,9 +7,9 @@ import headerBarData from "./header-bar-data"
 import styles from "./layout.module.styl"
 
 const HeaderIcons = () =>
-  headerBarData.map((data, index) => {
-    return <HeaderBarIcon {...data} key={`header-bar-icon-${index}`} />
-  })
+  headerBarData.map((data, index) => (
+    <HeaderBarIcon {...data} key={`header-bar-icon-${index}`} />
+  ))
 
 const Layout = ({ children }) => (
   <div className={styles.container}>
