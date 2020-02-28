@@ -1,25 +1,19 @@
 import React from "react"
 import { graphql, Link } from "gatsby"
 
-import Layout from "../components/layout"
+import MarkdownEntryList from "../components/markdown-entry-list"
 
-import styles from "./games.module.styl"
-
-export default ({ data }) => {
-  const posts = data.allMarkdownRemark.edges.map(({ node }, index) => {
-    return (
-      <Link key={"blog-post" + index} to={node.fields.slug}>
-        <h1>{node.frontmatter.title}</h1>
-      </Link>
-    )
-  })
+const BlogPost = ({ title, slug }) => {
   return (
-    <Layout>
-      <h1 className={styles.header}>Posts</h1>
-      <div className={styles.posts}>{posts}</div>
-    </Layout>
+    <Link to={slug}>
+      <h1>{title}</h1>
+    </Link>
   )
 }
+
+const BlogPostList = MarkdownEntryList(BlogPost)
+
+export default ({ data }) => <BlogPostList data={data} title="Blog Posts" />
 
 export const query = graphql`
   {

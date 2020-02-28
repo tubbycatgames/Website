@@ -2,27 +2,11 @@ import React from "react"
 import { graphql } from "gatsby"
 
 import GameEntry from "../components/game-entry"
-import Layout from "../components/layout"
+import MarkdownEntryList from "../components/markdown-entry-list"
 
-import styles from "./games.module.styl"
+const GameEntryList = MarkdownEntryList(GameEntry)
 
-export default ({ data }) => {
-  const entries = data.allMarkdownRemark.edges.map(({ node }, index) => {
-    return (
-      <GameEntry
-        {...node.fields}
-        {...node.frontmatter}
-        key={"game-entry" + index}
-      />
-    )
-  })
-  return (
-    <Layout>
-      <h1 className={styles.header}>Games</h1>
-      <div className={styles.entries}>{entries}</div>
-    </Layout>
-  )
-}
+export default ({ data }) => <GameEntryList data={data} title="Games" />
 
 export const query = graphql`
   {
