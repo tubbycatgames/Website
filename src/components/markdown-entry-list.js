@@ -5,15 +5,13 @@ import styles from "./markdown-entry-list.module.styl"
 
 export default EntryComponent => {
   return ({ data, title }) => {
-    const entries = data.allMarkdownRemark.edges.map(({ node }, index) => {
-      return (
-        <EntryComponent
-          {...node.fields}
-          {...node.frontmatter}
-          key={"markdown-entry-" + index}
-        />
-      )
-    })
+    const entries = data.allMarkdownRemark.edges.map(({ node }, index) => (
+      <EntryComponent
+        {...node.fields}
+        {...node.frontmatter}
+        key={"markdown-entry-" + index}
+      />
+    ))
 
     return (
       <Layout>

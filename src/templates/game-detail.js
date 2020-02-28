@@ -4,19 +4,29 @@ import Img from "gatsby-image"
 
 import Layout from "../components/layout"
 
-export default ({ data }) => {
-  const game = data.markdownRemark
-  const { icon, name, play } = game.frontmatter
-  return (
-    <Layout>
-      <h1>{name}</h1>
-      <a href={play}>
-        <Img alt={`${name} Icon`} fluid={icon.childImageSharp.fluid} />
-      </a>
-      <div dangerouslySetInnerHTML={{ __html: game.html }} />
-    </Layout>
-  )
-}
+export default ({ 
+  data: {
+    markdownRemark: {
+      frontmatter: {
+        icon: {
+          childImageSharp: {
+            fluid
+          }
+        },
+        name,
+        play,
+      },
+      html,
+    }
+  }}) => (
+  <Layout>
+    <h1>{name}</h1>
+    <a href={play}>
+      <Img alt={`${name} Icon`} fluid={fluid} />
+    </a>
+    <div dangerouslySetInnerHTML={{ __html: html }} />
+  </Layout>
+)
 
 export const query = graphql`
   query($slug: String!) {
