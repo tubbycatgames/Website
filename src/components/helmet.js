@@ -2,15 +2,11 @@ import Helmet from "react-helmet"
 import React from "react"
 import { StaticQuery, graphql } from "gatsby"
 
-const render = ({ 
-    site: {
-      siteMetadata: { 
-        author, 
-        description, 
-        title 
-      }
-    }
-  }) => (
+const render = ({
+  site: {
+    siteMetadata: { author, description, title },
+  },
+}) => (
   <Helmet
     meta={[
       {

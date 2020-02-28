@@ -4,21 +4,20 @@ import Img from "gatsby-image"
 
 import Layout from "../components/layout"
 
-export default ({ 
+export default ({
   data: {
     markdownRemark: {
       frontmatter: {
         icon: {
-          childImageSharp: {
-            fluid
-          }
+          childImageSharp: { fluid },
         },
         name,
         play,
       },
       html,
-    }
-  }}) => (
+    },
+  },
+}) => (
   <Layout>
     <h1>{name}</h1>
     <a href={play}>
