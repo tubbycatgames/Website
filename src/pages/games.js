@@ -7,12 +7,12 @@ import Layout from "../components/layout"
 import styles from "./games.module.styl"
 
 export default ({ data }) => {
-  const entries = data.allMarkdownRemark.edges.map((edge, index) => {
+  const entries = data.allMarkdownRemark.edges.map(({ node }, index) => {
     return (
       <GameEntry
-        {...edge.node.fields}
-        {...edge.node.frontmatter}
-        key={"gameEntry" + index}
+        {...node.fields}
+        {...node.frontmatter}
+        key={"game-entry" + index}
       />
     )
   })
@@ -36,7 +36,6 @@ export const query = graphql`
             slug
           }
           frontmatter {
-            creation
             description
             icon {
               childImageSharp {
