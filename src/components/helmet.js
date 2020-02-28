@@ -54,6 +54,4 @@ const query = graphql`
   }
 `
 
-export default () => {
-  return <StaticQuery query={query} render={render} />
-}
+export default () => <StaticQuery query={query} render={render} />
