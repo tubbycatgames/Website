@@ -1,10 +1,12 @@
 @require "./colors"
 
+border_width = 2px
+
 .links
     display flex
     border-color primary
     border-style solid 
-    border-width 1px 0px 0px 0px
+    border-width border_width 0px 0px 0px
     justify-content space-evenly
     
     a
@@ -14,7 +16,7 @@
     a:not(:last-child) 
         border-color primary
         border-style solid 
-        border-width 0px 1px 0px 0px
+        border-width 0px border_width 0px 0px
 
     a:hover
         background-color tertiary
@@ -22,7 +24,9 @@
         p
             color secondary
 
+    margin = 2px
+
     p
         color primary
-        margin-bottom 2px
-        margin-top 2px
+        margin-bottom margin
+        margin-top margin

@@ -1,6 +1,9 @@
 @require "./colors"
 
-border-radius = 5px
+border_radius = 5px
+border_width = 1px
+max_width = 840px
+spacing = 10px
 
 .container
     align-items center
@@ -8,26 +11,23 @@ border-radius = 5px
     display flex
     flex-direction column
     min-height 100%
-    padding-left 10px
-    padding-right 10px
+    padding-left spacing
+    padding-right spacing
         
     .content
         align-items center
-        border 1px solid white
-        border-radius border-radius
+        border border_width solid white
+        border-radius border_radius
         flex 1
         display flex
         flex-direction column
-        padding-left 10px
-        padding-right 10px
-        padding-bottom 10px
-        margin-top 10px
-        margin-bottom 10px
-        max-width 840px
+        margin spacing
+        max-width max_width
+        padding spacing
         text-align center
         color white
 
     .footer
         background-color secondary
-        border-radius border-radius border-radius 0px 0px
-        padding 0px 10px 0px 10px
+        border-radius border_radius border_radius 0px 0px
+        padding 0px spacing 0px spacing
