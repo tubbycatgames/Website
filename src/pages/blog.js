@@ -1,15 +1,10 @@
 import React from "react"
-import { graphql, Link } from "gatsby"
+import { graphql } from "gatsby"
 
+import BlogPostSummary from "../components/blog-post-summary"
 import MarkdownEntryList from "../components/markdown-entry-list"
 
-const BlogPost = ({ title, slug }) => (
-  <Link to={slug}>
-    <h2>{title}</h2>
-  </Link>
-)
-
-const BlogPostList = MarkdownEntryList(BlogPost)
+const BlogPostList = MarkdownEntryList(BlogPostSummary)
 
 export default ({ data }) => <BlogPostList data={data} title="Blog Posts" />
 
@@ -25,6 +20,7 @@ export const query = graphql`
             slug
           }
           frontmatter {
+            creation
             title
           }
         }

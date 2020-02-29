@@ -1,6 +1,7 @@
 import React from "react"
 import { graphql } from "gatsby"
 
+import BlogPostSummary from "../components/blog-post-summary"
 import Layout from "../components/layout"
 
 import styles from "./blog-post.module.styl"
@@ -8,13 +9,13 @@ import styles from "./blog-post.module.styl"
 export default ({
   data: {
     markdownRemark: {
-      frontmatter: { title },
+      frontmatter: { creation, title },
       html,
     },
   },
 }) => (
   <Layout>
-    <h1>{title}</h1>
+    <BlogPostSummary creation={creation} title={title} />
     <div
       className={styles.content}
       dangerouslySetInnerHTML={{ __html: html }}
@@ -27,6 +28,7 @@ export const query = graphql`
     markdownRemark(fields: { slug: { eq: $slug } }) {
       html
       frontmatter {
+        creation
         title
       }
     }

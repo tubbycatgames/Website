@@ -29,6 +29,7 @@
     "gatsby-source-filesystem": "^2.1.48",
     "gatsby-transformer-remark": "^2.6.50",
     "gatsby-transformer-sharp": "^2.3.14",
+    "moment": "^2.24.0",
     "react": "^16.12.0",
     "react-dom": "npm:@hot-loader/react-dom",
     "react-helmet": "^5.2.1",

@@ -1,0 +1,16 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`Blog Post renders a summary for a blog post 1`] = `
+<a
+  href="A Page"
+>
+  <h2
+    className="title"
+  >
+    A Post!
+  </h2>
+  <small>
+    2004, September 22nd
+  </small>
+</a>
+`;
