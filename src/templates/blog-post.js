@@ -5,11 +5,14 @@ import Layout from "../components/layout"
 
 export default ({
   data: {
-    markdownRemark: { frontmatter, html },
+    markdownRemark: {
+      frontmatter: { title },
+      html,
+    },
   },
 }) => (
   <Layout>
-    <h1>{frontmatter.title}</h1>
+    <h1>{title}</h1>
     <div dangerouslySetInnerHTML={{ __html: html }} />
   </Layout>
 )

@@ -1,4 +1,5 @@
 import React from "react"
+import { StaticQuery, graphql } from "gatsby"
 
 import HeaderBarIcon from "./header-bar-icon"
 import Helmet from "./helmet"
@@ -11,9 +12,9 @@ const HeaderIcons = () =>
     <HeaderBarIcon {...data} key={`header-bar-icon-${index}`} />
   ))
 
-const Layout = ({ children }) => (
+export const Layout = ({ children, siteMetadata }) => (
   <div className={styles.container}>
-    <Helmet />
+    <Helmet {...siteMetadata} />
     <div className={styles.header}>
       <HeaderIcons />
     </div>
@@ -24,4 +25,21 @@ const Layout = ({ children }) => (
   </div>
 )
 
-export default Layout
+const query = graphql`
+  query {
+    site {
+      siteMetadata {
+        author
+        description
+        title
+      }
+    }
+  }
+`
+
+export default props => (
+  <StaticQuery
+    query={query}
+    render={data => <Layout siteMetadata={data.site.siteMetadata} {...props} />}
+  />
+)

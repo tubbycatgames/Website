@@ -1,3 +1,5 @@
+const primaryColor = "#003F39"
+
 module.exports = {
   plugins: [
     {
@@ -9,13 +11,13 @@ module.exports = {
     {
       resolve: "gatsby-plugin-manifest",
       options: {
-        background_color: "#003F39",
+        background_color: primaryColor,
         display: "standalone",
         icon: "src/images/Logo.png",
         name: "Tubby Cat Games",
         short_name: "TCD",
         start_url: "/",
-        theme_color: "#003F39",
+        theme_color: primaryColor,
       },
     },
     "gatsby-plugin-offline",
