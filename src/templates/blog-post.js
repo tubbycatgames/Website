@@ -3,6 +3,8 @@ import { graphql } from "gatsby"
 
 import Layout from "../components/layout"
 
+import styles from "./blog-post.module.styl"
+
 export default ({
   data: {
     markdownRemark: {
@@ -13,7 +15,10 @@ export default ({
 }) => (
   <Layout>
     <h1>{title}</h1>
-    <div dangerouslySetInnerHTML={{ __html: html }} />
+    <div
+      className={styles.content}
+      dangerouslySetInnerHTML={{ __html: html }}
+    />
   </Layout>
 )
 

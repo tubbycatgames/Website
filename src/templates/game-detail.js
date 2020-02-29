@@ -4,6 +4,8 @@ import { graphql } from "gatsby"
 import Layout from "../components/layout"
 import GameEntry from "../components/game-entry"
 
+import styles from "./game-detail.module.styl"
+
 export default ({
   data: {
     markdownRemark: { fields, frontmatter, html },
@@ -11,7 +13,10 @@ export default ({
 }) => (
   <Layout>
     <GameEntry {...frontmatter} {...fields} />
-    <div dangerouslySetInnerHTML={{ __html: html }} />
+    <div
+      className={styles.content}
+      dangerouslySetInnerHTML={{ __html: html }}
+    />
   </Layout>
 )
 

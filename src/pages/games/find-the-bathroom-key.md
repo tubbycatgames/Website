@@ -17,12 +17,14 @@ returned.
 I proposed an alternative explanation to the missing keys,
 a gremlin who broke in at night to steal them!
 
-Created with the spirit of a game jam.  
+Created with the spirit of a game jam.
+
 I limited myself to a week when I was on call at Vistar Media and was
 allowed to work on a work adjacent side project when not dealing with
-support issues.  
+support issues.
+
 A not-to-scale-but-inspired level based on the old Vistar Media offices.
 
 My first game created with Unity that was beyond the scope of a tutorial.
 
-Music and some of the art courtesy of Nat Lownes - http://narsk.org/
+Music and some of the art courtesy of Nat Lownes - https://narsk.org/
