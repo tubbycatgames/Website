@@ -5,7 +5,7 @@ import MarkdownEntryList from "../components/markdown-entry-list"
 
 const BlogPost = ({ title, slug }) => (
   <Link to={slug}>
-    <h1>{title}</h1>
+    <h2>{title}</h2>
   </Link>
 )
 
