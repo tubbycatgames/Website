@@ -1,22 +1,16 @@
 import React from "react"
 import { graphql } from "gatsby"
-import Img from "gatsby-image"
 
 import Layout from "../components/layout"
+import GameEntry from "../components/game-entry"
 
 export default ({
   data: {
-    markdownRemark: {
-      frontmatter: { icon, name, play },
-      html,
-    },
+    markdownRemark: { fields, frontmatter, html },
   },
 }) => (
   <Layout>
-    <h1>{name}</h1>
-    <a href={play}>
-      <Img alt={`${name} Icon`} fluid={icon.childImageSharp.fluid} />
-    </a>
+    <GameEntry {...frontmatter} {...fields} />
     <div dangerouslySetInnerHTML={{ __html: html }} />
   </Layout>
 )
@@ -24,18 +18,24 @@ export default ({
 export const query = graphql`
   query($slug: String!) {
     markdownRemark(fields: { slug: { eq: $slug } }) {
-      html
+      fields {
+        slug
+      }
       frontmatter {
-        name
+        description
         icon {
           childImageSharp {
-            fluid(maxWidth: 800) {
+            fluid(maxWidth: 300) {
               ...GatsbyImageSharpFluid
             }
           }
         }
+        name
         play
+        source
+        video
       }
+      html
     }
   }
 `
