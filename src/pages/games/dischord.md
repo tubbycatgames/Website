@@ -9,4 +9,4 @@ play: https://globalgamejam.org/2019/games/dischord
 video: null
 ---
 
-Global Game Jawn 2019
+Full Description Will Be Added Soon!

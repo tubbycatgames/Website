@@ -9,4 +9,4 @@ play: https://globalgamejam.org/2020/games/space-trash-6
 video: null
 ---
 
-Global Game Jawn 2020
+Full Description Will Be Added Soon!

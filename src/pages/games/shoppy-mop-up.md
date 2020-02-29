@@ -9,4 +9,4 @@ play: https://jakeo.itch.io/shoppy-mop-up
 video: null
 ---
 
-Philly Game Jam 2019
+Full Description Will Be Added Soon!

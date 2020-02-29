@@ -9,7 +9,7 @@ import styles from "./layout.module.styl"
 export const Layout = ({ children, siteMetadata }) => (
   <div className={styles.container}>
     <Helmet {...siteMetadata} />
-    <HeaderBar/>
+    <HeaderBar />
     <div className={styles.content}>{children}</div>
     <div className={styles.footer}>
       <MailSignup />

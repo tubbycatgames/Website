@@ -9,4 +9,4 @@ play: https://kotarofujita.itch.io/the-horde
 video: https://www.youtube.com/watch?v=4piA8VZmS50
 ---
 
-Democracy Jam 2018
+Full Description Will Be Added Soon!
