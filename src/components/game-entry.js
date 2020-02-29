@@ -18,9 +18,9 @@ const GameEntry = ({ description, icon, name, play, slug, source, video }) => (
     </Link>
     <p className={styles.description}>{description}</p>
     <div className={styles.links}>
-      <OptionalLink href={play}>Play the Game!</OptionalLink>
-      <OptionalLink href={source}>Source Code</OptionalLink>
-      <OptionalLink href={video}>Playthrough Video</OptionalLink>
+      <OptionalLink href={play}>Play!</OptionalLink>
+      <OptionalLink href={source}>Inspect!</OptionalLink>
+      <OptionalLink href={video}>Watch!</OptionalLink>
     </div>
     <Link to={slug}>
       <Img alt={`${name} Icon`} fluid={icon.childImageSharp.fluid} />

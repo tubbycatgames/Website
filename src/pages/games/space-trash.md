@@ -1,7 +1,7 @@
 ---
 type: game
 creation: 2020-02-01
-description: Repair your ship by repairing space
+description: Repair your ship by repairing space!
 icon: ../../images/games/SpaceTrash.png
 name: Space Trash
 source: null
