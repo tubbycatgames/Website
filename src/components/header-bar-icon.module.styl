@@ -1,13 +1,15 @@
-icon_size = 24px
-logo_size = icon_size * 3
+icon_size = 36px
+logo_size = icon_size * 2
+padding = (icon_size / 6)px
 
-icon-dimensions(size, padding_factor)
+icon-dimensions(size)
+    margin 0px
     max-height size 
     max-width size 
-    padding (size / padding_factor)px
+    padding padding
 
 .icon
-    icon-dimensions(icon_size, 4)
+    icon-dimensions(icon_size)
 
 .logo
-    icon-dimensions(logo_size, 8)
+    icon-dimensions(logo_size)
