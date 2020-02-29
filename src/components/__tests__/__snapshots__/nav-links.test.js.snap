@@ -1,0 +1,29 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`Nav Links renders app nav links 1`] = `
+<div
+  className="links"
+>
+  <a
+    href="/"
+  >
+    <p>
+      About
+    </p>
+  </a>
+  <a
+    href="/games"
+  >
+    <p>
+      Games
+    </p>
+  </a>
+  <a
+    href="/blog"
+  >
+    <p>
+      Blog
+    </p>
+  </a>
+</div>
+`;

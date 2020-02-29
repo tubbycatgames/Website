@@ -7,87 +7,116 @@ exports[`Layout renders all site sections and children 1`] = `
   <div
     className="header"
   >
-    <a
-      href="https://tubbycatgames.com"
+    <div
+      className="icons"
     >
-      <img
-        alt="Tubby Cat Games Icon"
-        className="logo"
-        src="test-file-stub"
-      />
-    </a>
-    <a
-      href="https://tubbycatgames.itch.io/"
+      <a
+        href="https://tubbycatgames.com"
+      >
+        <img
+          alt="Tubby Cat Games Icon"
+          className="logo"
+          src="test-file-stub"
+        />
+      </a>
+      <a
+        href="https://tubbycatgames.itch.io/"
+      >
+        <img
+          alt="Itch Page Icon"
+          className="icon"
+          src="test-file-stub"
+        />
+      </a>
+      <a
+        href="https://gamejolt.com/@tubbycatgames"
+      >
+        <img
+          alt="Game Jolt Page Icon"
+          className="icon"
+          src="test-file-stub"
+        />
+      </a>
+      <a
+        href="https://github.com/tubbycatgames"
+      >
+        <img
+          alt="GitHub Page Icon"
+          className="icon"
+          src="test-file-stub"
+        />
+      </a>
+      <a
+        href="https://discord.gg/vyh5XY"
+      >
+        <img
+          alt="Discord Social Media Icon"
+          className="icon"
+          src="test-file-stub"
+        />
+      </a>
+      <a
+        href="https://twitter.com/tubbycatgames"
+      >
+        <img
+          alt="Twitter Social Media Icon"
+          className="icon"
+          src="test-file-stub"
+        />
+      </a>
+      <a
+        href="https://instagram.com/tubbycatgames"
+      >
+        <img
+          alt="Instagram Social Media Icon"
+          className="icon"
+          src="test-file-stub"
+        />
+      </a>
+      <a
+        href="https://fb.me/tubbycatgames"
+      >
+        <img
+          alt="Facebook Social Media Icon"
+          className="icon"
+          src="test-file-stub"
+        />
+      </a>
+      <a
+        href="https://www.youtube.com/channel/UC_6l3SdhVjdtTd2DnHK2JbQ"
+      >
+        <img
+          alt="YouTube Channel Icon"
+          className="icon"
+          src="test-file-stub"
+        />
+      </a>
+    </div>
+    <div
+      className="links"
     >
-      <img
-        alt="Itch Page Icon"
-        className="icon"
-        src="test-file-stub"
-      />
-    </a>
-    <a
-      href="https://gamejolt.com/@tubbycatgames"
-    >
-      <img
-        alt="Game Jolt Page Icon"
-        className="icon"
-        src="test-file-stub"
-      />
-    </a>
-    <a
-      href="https://github.com/tubbycatgames"
-    >
-      <img
-        alt="GitHub Page Icon"
-        className="icon"
-        src="test-file-stub"
-      />
-    </a>
-    <a
-      href="https://discord.gg/vyh5XY"
-    >
-      <img
-        alt="Discord Social Media Icon"
-        className="icon"
-        src="test-file-stub"
-      />
-    </a>
-    <a
-      href="https://twitter.com/tubbycatgames"
-    >
-      <img
-        alt="Twitter Social Media Icon"
-        className="icon"
-        src="test-file-stub"
-      />
-    </a>
-    <a
-      href="https://instagram.com/tubbycatgames"
-    >
-      <img
-        alt="Instagram Social Media Icon"
-        className="icon"
-        src="test-file-stub"
-      />
-    </a>
-    <a
-      href="https://fb.me/tubbycatgames"
-    >
-      <img
-        alt="Facebook Social Media Icon"
-        className="icon"
-        src="test-file-stub"
-      />
-    </a>
-    <a
-      href="https://www.youtube.com/channel/UC_6l3SdhVjdtTd2DnHK2JbQ"
-    >
-      <img
-        alt="YouTube Channel Icon"
-        className="icon"
-        src="test-file-stub"
-      />
-    </a>
+      <a
+        href="/"
+      >
+        <p>
+          About
+        </p>
+      </a>
+      <a
+        href="/games"
+      >
+        <p>
+          Games
+        </p>
+      </a>
+      <a
+        href="/blog"
+      >
+        <p>
+          Blog
+        </p>
+      </a>
+    </div>
   </div>
   <div
     className="content"
