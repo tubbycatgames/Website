@@ -1,5 +1,6 @@
 @require "./colors"
 
+border_radius = 10px
 border_width = 2px
 
 .links
@@ -12,6 +13,11 @@ border_width = 2px
     a
         flex 1
         text-align center
+    a:first-child
+        border-bottom-left-radius border_radius
+
+    a:last-child
+        border-bottom-right-radius border_radius
 
     a:not(:last-child) 
         border-color primary
