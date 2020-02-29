@@ -7,13 +7,7 @@ import Layout from "../components/layout"
 export default ({
   data: {
     markdownRemark: {
-      frontmatter: {
-        icon: {
-          childImageSharp: { fluid },
-        },
-        name,
-        play,
-      },
+      frontmatter: { icon, name, play },
       html,
     },
   },
@@ -21,7 +15,7 @@ export default ({
   <Layout>
     <h1>{name}</h1>
     <a href={play}>
-      <Img alt={`${name} Icon`} fluid={fluid} />
+      <Img alt={`${name} Icon`} fluid={icon.childImageSharp.fluid} />
     </a>
     <div dangerouslySetInnerHTML={{ __html: html }} />
   </Layout>
