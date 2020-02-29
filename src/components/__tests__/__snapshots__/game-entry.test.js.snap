@@ -7,7 +7,9 @@ exports[`Game Entry renders a game entry for a game listing 1`] = `
   <a
     href="/my/internal/link.html"
   >
-    <h2>
+    <h2
+      className="name"
+    >
       Da Game
     </h2>
   </a>
@@ -23,21 +25,21 @@ exports[`Game Entry renders a game entry for a game listing 1`] = `
       href="itch.io"
     >
       <p>
-        Play the Game!
+        Play!
       </p>
     </a>
     <a
       href="github.com"
     >
       <p>
-        Source Code
+        Inspect!
       </p>
     </a>
     <a
       href="youtube.com"
     >
       <p>
-        Playthrough Video
+        Watch!
       </p>
     </a>
   </div>
