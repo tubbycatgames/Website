@@ -1,6 +1,0 @@
-#/bin/bash -eux
-
-yarn build
-
-aws2 s3 cp --recursive ./public s3://www.phil-simmons.com
-aws2 s3 cp --recursive ./public s3://www.tubbycatgames.com
