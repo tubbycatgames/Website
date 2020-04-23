@@ -1,5 +1,5 @@
-import Helmet from "react-helmet"
 import React from "react"
+import { Helmet } from "react-helmet"
 
 const TCGHelmet = ({ author, description, title }) => (
   <Helmet
