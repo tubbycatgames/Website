@@ -1,7 +1,7 @@
 const path = require("path")
 const { createFilePath } = require("gatsby-source-filesystem")
 
-const markdownSlugQuery = pageType => `
+const markdownSlugQuery = (pageType) => `
   query {
     allMarkdownRemark(filter: { 
       frontmatter: { 

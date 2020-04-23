@@ -10,7 +10,7 @@ export default class MailSignup extends Component {
     result: "",
   }
 
-  handleEmailChange = event => {
+  handleEmailChange = (event) => {
     this.setState({
       email: event.target.value,
       error: "",
@@ -18,7 +18,7 @@ export default class MailSignup extends Component {
     })
   }
 
-  handleSubmit = async event => {
+  handleSubmit = async (event) => {
     event.preventDefault()
 
     const response = await addToMailChimp(this.state.email)

@@ -29,9 +29,11 @@ const query = graphql`
   }
 `
 
-export default props => (
+export default (props) => (
   <StaticQuery
     query={query}
-    render={data => <Layout siteMetadata={data.site.siteMetadata} {...props} />}
+    render={(data) => (
+      <Layout siteMetadata={data.site.siteMetadata} {...props} />
+    )}
   />
 )
