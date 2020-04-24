@@ -10258,6 +10258,11 @@ netlify-plugin-a11y@^0.0.6:
     make-dir "^3.0.0"
     pa11y "^5.3.0"
 
+netlify-plugin-gatsby-cache@^0.2.1:
+  version "0.2.1"
+  resolved "https://registry.yarnpkg.com/netlify-plugin-gatsby-cache/-/netlify-plugin-gatsby-cache-0.2.1.tgz#22d8ef9a9b022909ac3e330734a3362d11bef1c6"
+  integrity sha512-y5gSjDXPWyj/Hdjp3WEGWjpeBH5nCnqztgF45JIK3/xVQBH4vwurOUsoK6C9500d7z2/CNH6I9k01crIA81pMw==
+
 newline-regex@^0.2.0:
   version "0.2.1"
   resolved "https://registry.yarnpkg.com/newline-regex/-/newline-regex-0.2.1.tgz#4696d869045ee1509b83aac3a58d4a93bbed926e"
