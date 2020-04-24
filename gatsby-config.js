@@ -15,7 +15,7 @@ module.exports = {
         display: "standalone",
         icon: "src/images/Logo.png",
         name: "Tubby Cat Games",
-        short_name: "TCD",
+        short_name: "TCG",
         start_url: "/",
         theme_color: primaryColor,
       },
