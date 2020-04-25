@@ -49,14 +49,14 @@ export default class MailSignup extends Component {
   handleSubmit = async (event) => {
     event.preventDefault()
 
-    const response = await addToMailChimp(this.state.email)
+    const { result, msg } = await addToMailChimp(this.state.email)
 
-    if (response.result === "success") {
-      this.setState({ error: "", result: response.msg })
-    } else if (response.result === "error") {
-      const errorText = response.msg.includes("is already subscribed")
+    if (result === "success") {
+      this.setState({ error: "", result: msg })
+    } else if (result === "error") {
+      const error = msg.includes("is already subscribed")
         ? "You are already subscribed!"
-        : response.msg
+        : msg
       this.setState({ error, result: "" })
     }
   }
