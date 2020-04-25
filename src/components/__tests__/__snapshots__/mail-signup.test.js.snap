@@ -1,5 +1,71 @@
 // Jest Snapshot v1, https://goo.gl/fbAQLP
 
+exports[`Mail Signup renders a mailing form with a result 1`] = `
+<div>
+  <h2
+    className="header"
+  >
+    Join our mailing list for game updates!
+  </h2>
+  <p
+    className="result"
+  >
+    Worked!
+  </p>
+  <form
+    className="form"
+  >
+    <input
+      aria-label="Mailing List Signup Email"
+      className="input"
+      name="email"
+      placeholder="Enter your email here"
+      required={true}
+      type="email"
+    />
+    <button
+      className="button"
+      type="submit"
+    >
+      Sign up!
+    </button>
+  </form>
+</div>
+`;
+
+exports[`Mail Signup renders a mailing form with an error 1`] = `
+<div>
+  <h2
+    className="header"
+  >
+    Join our mailing list for game updates!
+  </h2>
+  <p
+    className="error"
+  >
+    Ooops
+  </p>
+  <form
+    className="form"
+  >
+    <input
+      aria-label="Mailing List Signup Email"
+      className="input"
+      name="email"
+      placeholder="Enter your email here"
+      required={true}
+      type="email"
+    />
+    <button
+      className="button"
+      type="submit"
+    >
+      Sign up!
+    </button>
+  </form>
+</div>
+`;
+
 exports[`Mail Signup renders a mailing list signup form 1`] = `
 <div>
   <h2
