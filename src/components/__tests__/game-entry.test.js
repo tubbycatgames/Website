@@ -31,7 +31,7 @@ describe("Game Entry", () => {
     expect(tree.toJSON()).toMatchSnapshot()
   })
 
-  it('should omit optional fields', () => {
+  it("should omit optional fields", () => {
     const tree = renderer.create(
       <GameEntry
         creation="2004-09-22"
