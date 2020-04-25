@@ -1,14 +1,15 @@
 import React from "react"
 import Img from "gatsby-image"
 import { Link } from "gatsby"
+import { OutboundLink } from "gatsby-plugin-google-analytics"
 
 import styles from "./game-entry.module.styl"
 
 const OptionalLink = ({ children, href }) =>
   href ? (
-    <a href={href}>
+    <OutboundLink href={href}>
       <p>{children}</p>
-    </a>
+    </OutboundLink>
   ) : null
 
 const GameEntry = ({ description, icon, name, play, slug, source, video }) => (

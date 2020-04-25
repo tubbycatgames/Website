@@ -12,6 +12,7 @@ exports[`Layout renders all site sections and children 1`] = `
     >
       <a
         href="https://tubbycatgames.com"
+        onClick={[Function]}
       >
         <img
           alt="Tubby Cat Games Icon"
@@ -21,6 +22,7 @@ exports[`Layout renders all site sections and children 1`] = `
       </a>
       <a
         href="https://tubbycatgames.itch.io/"
+        onClick={[Function]}
       >
         <img
           alt="Itch Page Icon"
@@ -30,6 +32,7 @@ exports[`Layout renders all site sections and children 1`] = `
       </a>
       <a
         href="https://gamejolt.com/@tubbycatgames"
+        onClick={[Function]}
       >
         <img
           alt="Game Jolt Page Icon"
@@ -39,6 +42,7 @@ exports[`Layout renders all site sections and children 1`] = `
       </a>
       <a
         href="https://github.com/tubbycatgames"
+        onClick={[Function]}
       >
         <img
           alt="GitHub Page Icon"
@@ -48,6 +52,7 @@ exports[`Layout renders all site sections and children 1`] = `
       </a>
       <a
         href="https://discord.gg/vyh5XY"
+        onClick={[Function]}
       >
         <img
           alt="Discord Social Media Icon"
@@ -57,6 +62,7 @@ exports[`Layout renders all site sections and children 1`] = `
       </a>
       <a
         href="https://twitter.com/tubbycatgames"
+        onClick={[Function]}
       >
         <img
           alt="Twitter Social Media Icon"
@@ -66,6 +72,7 @@ exports[`Layout renders all site sections and children 1`] = `
       </a>
       <a
         href="https://instagram.com/tubbycatgames"
+        onClick={[Function]}
       >
         <img
           alt="Instagram Social Media Icon"
@@ -75,6 +82,7 @@ exports[`Layout renders all site sections and children 1`] = `
       </a>
       <a
         href="https://fb.me/tubbycatgames"
+        onClick={[Function]}
       >
         <img
           alt="Facebook Social Media Icon"
@@ -84,6 +92,7 @@ exports[`Layout renders all site sections and children 1`] = `
       </a>
       <a
         href="https://www.youtube.com/channel/UC_6l3SdhVjdtTd2DnHK2JbQ"
+        onClick={[Function]}
       >
         <img
           alt="YouTube Channel Icon"

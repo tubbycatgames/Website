@@ -3,6 +3,7 @@
 exports[`Header Bar Icon renders a header bar icon 1`] = `
 <a
   href="Some madeup place"
+  onClick={[Function]}
 >
   <img
     alt="Some Alt Text!"

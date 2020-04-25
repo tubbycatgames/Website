@@ -23,6 +23,7 @@ exports[`Game Entry renders a game entry for a game listing 1`] = `
   >
     <a
       href="itch.io"
+      onClick={[Function]}
     >
       <p>
         Play!
@@ -30,6 +31,7 @@ exports[`Game Entry renders a game entry for a game listing 1`] = `
     </a>
     <a
       href="github.com"
+      onClick={[Function]}
     >
       <p>
         Inspect!
@@ -37,6 +39,7 @@ exports[`Game Entry renders a game entry for a game listing 1`] = `
     </a>
     <a
       href="youtube.com"
+      onClick={[Function]}
     >
       <p>
         Watch!
