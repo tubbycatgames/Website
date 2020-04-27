@@ -53,7 +53,12 @@ module.exports = {
       },
     },
     {
-      resolve: `gatsby-plugin-google-analytics`,
+      resolve: "gatsby-plugin-google-tagmanager",
+      id: "GTM-PH32RPD",
+    },
+    // Ordering after tagmanager due to plugin limitations
+    {
+      resolve: "gatsby-plugin-google-analytics",
       options: {
         trackingId: "UA-164532327-1",
       },
