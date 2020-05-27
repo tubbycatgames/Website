@@ -15,7 +15,7 @@ const OptionalLink = ({ children, href }) =>
 const GameEntry = ({ description, icon, name, play, slug, source, video }) => (
   <div className={styles.container}>
     <Link to={slug}>
-      <h2 className={styles.name}>{name}</h2>
+      <h1 className={styles.name}>{name}</h1>
     </Link>
     <p className={styles.description}>{description}</p>
     <div className={styles.links}>

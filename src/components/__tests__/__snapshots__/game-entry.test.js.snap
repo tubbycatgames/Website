@@ -7,11 +7,11 @@ exports[`Game Entry renders a game entry for a game listing 1`] = `
   <a
     href="/my/internal/link.html"
   >
-    <h2
+    <h1
       className="name"
     >
       Da Game
-    </h2>
+    </h1>
   </a>
   <p
     className="description"
@@ -115,11 +115,11 @@ exports[`Game Entry should omit optional fields 1`] = `
   <a
     href="/my/internal/link.html"
   >
-    <h2
+    <h1
       className="name"
     >
       Da Game
-    </h2>
+    </h1>
   </a>
   <p
     className="description"
