@@ -4,8 +4,6 @@ creation: 2020-05-27
 title: What is Tubby Cat Games?
 ---
 
-# What is Tubby Cat Games?
-
 Tubby Cat Games is an independent video game studio formed in the mid 2000s
 by Phil Simmons.
 
