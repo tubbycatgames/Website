@@ -53,6 +53,8 @@ exports[`Game Entry renders a game entry for a game listing 1`] = `
       className=" gatsby-image-wrapper"
       style={
         Object {
+          "maxHeight": null,
+          "maxWidth": null,
           "overflow": "hidden",
           "position": "relative",
         }
@@ -134,6 +136,8 @@ exports[`Game Entry should omit optional fields 1`] = `
       className=" gatsby-image-wrapper"
       style={
         Object {
+          "maxHeight": null,
+          "maxWidth": null,
           "overflow": "hidden",
           "position": "relative",
         }
