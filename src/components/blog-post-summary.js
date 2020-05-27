@@ -7,7 +7,7 @@ import styles from "./blog-post-summary.module.styl"
 const BlogPostSummary = ({ creation, title, slug }) => (
   <Link to={slug}>
     <h1 className={styles.title}>{title}</h1>
-    <small>{moment(creation).format("YYYY, MMMM Do")}</small>
+    <small>{moment(creation).format("MMMM DD, YYYY")}</small>
   </Link>
 )
 

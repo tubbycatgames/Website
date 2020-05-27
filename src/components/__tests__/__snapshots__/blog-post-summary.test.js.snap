@@ -10,7 +10,7 @@ exports[`Blog Post renders a summary for a blog post 1`] = `
     A Post!
   </h1>
   <small>
-    2004, September 22nd
+    September 22, 2004
   </small>
 </a>
 `;
