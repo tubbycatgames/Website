@@ -13,6 +13,7 @@ It started out as a Sole-Proprietorship and evolved into an LLC in an ill-fated
 effort to get a PS4 dev kit.
 
 We are currently working on an accessible, open-source game called Reactional.
+
 We also take part in organizing events for and participating in the local Philadelphia
 game development community.
 
