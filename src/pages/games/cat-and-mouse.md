@@ -6,7 +6,7 @@ icon: ../../images/games/CatAndMouse.png
 name: Cat And Mouse
 source: https://github.com/tubbycatgames/CatAndMouseJS
 play: https://playcatandmouse.com
-video: null
+video: https://youtu.be/XcTkQ3nhio8
 ---
 
 Cat and Mouse began as an attempt to learn game development through
