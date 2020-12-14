@@ -115,13 +115,6 @@ exports[`Header Bar renders the full header bar 1`] = `
         Games
       </p>
     </a>
-    <a
-      href="/blog"
-    >
-      <p>
-        Blog
-      </p>
-    </a>
   </div>
 </div>
 `;

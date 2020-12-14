@@ -7,8 +7,8 @@ export default [
     link: "/games",
     text: "Games",
   },
-  {
-    link: "/blog",
-    text: "Blog",
-  },
+  // {
+  //   link: "/blog",
+  //   text: "Blog",
+  // },
 ]

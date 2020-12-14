@@ -118,13 +118,6 @@ exports[`Layout renders all site sections and children 1`] = `
           Games
         </p>
       </a>
-      <a
-        href="/blog"
-      >
-        <p>
-          Blog
-        </p>
-      </a>
     </div>
   </div>
   <div
