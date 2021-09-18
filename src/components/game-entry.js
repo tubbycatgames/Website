@@ -3,7 +3,12 @@ import Img from "gatsby-image"
 import { Link } from "gatsby"
 import { OutboundLink } from "gatsby-plugin-google-analytics"
 
-import styles from "./game-entry.module.styl"
+import {
+  container,
+  description as descStyle,
+  links,
+  name as nameStyle,
+} from "./game-entry.module.styl"
 
 const OptionalLink = ({ children, href }) =>
   href ? (
@@ -13,12 +18,12 @@ const OptionalLink = ({ children, href }) =>
   ) : null
 
 const GameEntry = ({ description, icon, name, play, slug, source, video }) => (
-  <div className={styles.container}>
+  <div className={container}>
     <Link to={slug}>
-      <h1 className={styles.name}>{name}</h1>
+      <h1 className={nameStyle}>{name}</h1>
     </Link>
-    <p className={styles.description}>{description}</p>
-    <div className={styles.links}>
+    <p className={descStyle}>{description}</p>
+    <div className={links}>
       <OptionalLink href={play}>Play!</OptionalLink>
       <OptionalLink href={source}>Inspect!</OptionalLink>
       <OptionalLink href={video}>Watch!</OptionalLink>

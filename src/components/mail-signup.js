@@ -1,21 +1,28 @@
 import React, { Component } from "react"
 import addToMailChimp from "gatsby-plugin-mailchimp"
 
-import styles from "./mail-signup.module.styl"
+import {
+  button as buttonStyle,
+  error as errorStyle,
+  form,
+  header,
+  input as inputStyle,
+  result as resultStyle,
+} from "./mail-signup.module.styl"
 
 export const MailForm = ({ email, error, onEmailChange, onSubmit, result }) => {
-  const errorText = error ? <p className={styles.error}>{error}</p> : null
-  const resultText = result ? <p className={styles.result}>{result}</p> : null
+  const errorText = error ? <p className={errorStyle}>{error}</p> : null
+  const resultText = result ? <p className={resultStyle}>{result}</p> : null
 
   return (
     <div>
-      <h2 className={styles.header}>Join our mailing list for game updates!</h2>
+      <h2 className={header}>Join our mailing list for game updates!</h2>
       {errorText}
       {resultText}
-      <form className={styles.form} onSubmit={onSubmit}>
+      <form className={form} onSubmit={onSubmit}>
         <input
           aria-label="Mailing List Signup Email"
-          className={styles.input}
+          className={inputStyle}
           name="email"
           onChange={onEmailChange}
           placeholder="Enter your email here"
@@ -23,7 +30,7 @@ export const MailForm = ({ email, error, onEmailChange, onSubmit, result }) => {
           type="email"
           value={email}
         />
-        <button className={styles.button} type="submit">
+        <button className={buttonStyle} type="submit">
           Sign up!
         </button>
       </form>

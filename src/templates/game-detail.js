@@ -4,7 +4,7 @@ import { graphql } from "gatsby"
 import Layout from "../components/layout"
 import GameEntry from "../components/game-entry"
 
-import styles from "./game-detail.module.styl"
+import { content } from "./game-detail.module.styl"
 
 export default ({
   data: {
@@ -13,15 +13,12 @@ export default ({
 }) => (
   <Layout>
     <GameEntry {...frontmatter} {...fields} />
-    <div
-      className={styles.content}
-      dangerouslySetInnerHTML={{ __html: html }}
-    />
+    <div className={content} dangerouslySetInnerHTML={{ __html: html }} />
   </Layout>
 )
 
 export const query = graphql`
-  query($slug: String!) {
+  query ($slug: String!) {
     markdownRemark(fields: { slug: { eq: $slug } }) {
       fields {
         slug

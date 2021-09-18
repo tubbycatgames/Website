@@ -2,6 +2,7 @@ const primaryColor = "#003F39"
 
 module.exports = {
   plugins: [
+    '@mediacurrent/gatsby-plugin-silence-css-order-warning',
     {
       resolve: "gatsby-plugin-html-attributes",
       options: {

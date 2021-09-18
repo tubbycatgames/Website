@@ -1,7 +1,7 @@
 import React from "react"
 
 import Layout from "./layout"
-import styles from "./markdown-entry-list.module.styl"
+import { entries as entriesStyle } from "./markdown-entry-list.module.styl"
 
 export default (EntryComponent) => {
   return ({ data, title }) => {
@@ -15,8 +15,8 @@ export default (EntryComponent) => {
 
     return (
       <Layout>
-        <h1 className={styles.title}>{title}</h1>
-        <div className={styles.entries}>{entries}</div>
+        <h1 className>{title}</h1>
+        <div className={entriesStyle}>{entries}</div>
       </Layout>
     )
   }

@@ -4,7 +4,7 @@ import { graphql } from "gatsby"
 import BlogPostSummary from "../components/blog-post-summary"
 import Layout from "../components/layout"
 
-import styles from "./blog-post.module.styl"
+import { content } from "./blog-post.module.styl"
 
 export default ({
   data: {
@@ -16,15 +16,12 @@ export default ({
 }) => (
   <Layout>
     <BlogPostSummary creation={creation} title={title} />
-    <div
-      className={styles.content}
-      dangerouslySetInnerHTML={{ __html: html }}
-    />
+    <div className={content} dangerouslySetInnerHTML={{ __html: html }} />
   </Layout>
 )
 
 export const query = graphql`
-  query($slug: String!) {
+  query ($slug: String!) {
     markdownRemark(fields: { slug: { eq: $slug } }) {
       html
       frontmatter {

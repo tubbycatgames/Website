@@ -4,7 +4,7 @@ import HeaderBarIcon from "./header-bar-icon"
 import NavLinks from "./nav-links"
 import headerBarData from "./header-bar-data"
 
-import styles from "./header-bar.module.styl"
+import { header, icons } from "./header-bar.module.styl"
 
 const HeaderIcons = () =>
   headerBarData.map((data, index) => (
@@ -12,8 +12,8 @@ const HeaderIcons = () =>
   ))
 
 const HeaderBar = () => (
-  <div className={styles.header}>
-    <div className={styles.icons}>
+  <div className={header}>
+    <div className={icons}>
       <HeaderIcons />
     </div>
     <NavLinks />

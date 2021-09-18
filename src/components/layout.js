@@ -4,14 +4,14 @@ import { StaticQuery, graphql } from "gatsby"
 import HeaderBar from "./header-bar"
 import Helmet from "./helmet"
 import MailSignup from "./mail-signup"
-import styles from "./layout.module.styl"
+import { container, content, footer } from "./layout.module.styl"
 
 export const Layout = ({ children, siteMetadata }) => (
-  <div className={styles.container}>
+  <div className={container}>
     <Helmet {...siteMetadata} />
     <HeaderBar />
-    <div className={styles.content}>{children}</div>
-    <div className={styles.footer}>
+    <div className={content}>{children}</div>
+    <div className={footer}>
       <MailSignup />
     </div>
   </div>
