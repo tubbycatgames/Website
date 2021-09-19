@@ -14,7 +14,6 @@
     "test": "jest"
   },
   "dependencies": {
-    "@hot-loader/react-dom": "^17.0.1",
     "gatsby": "^3.14.0",
     "gatsby-image": "^3.11.0",
     "gatsby-plugin-google-analytics": "^3.14.0",
