@@ -10,7 +10,7 @@ import YouTube from "../images/social/YouTube.png"
 
 import { logo } from "./header-bar-icon.module.styl"
 
-export default [
+const icons = [
   {
     alt: "Tubby Cat Games Icon",
     href: "https://tubbycatgames.com",
@@ -58,3 +58,5 @@ export default [
     src: YouTube,
   },
 ]
+
+export default icons

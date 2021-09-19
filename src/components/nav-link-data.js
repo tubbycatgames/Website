@@ -1,4 +1,4 @@
-export default [
+const links = [
   {
     link: "/",
     text: "About",
@@ -12,3 +12,6 @@ export default [
   //   text: "Blog",
   // },
 ]
+
+
+export default links

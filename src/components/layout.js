@@ -29,7 +29,7 @@ const query = graphql`
   }
 `
 
-export default (props) => (
+const QueryingLayout = (props) => (
   <StaticQuery
     query={query}
     render={(data) => (
@@ -37,3 +37,5 @@ export default (props) => (
     )}
   />
 )
+
+export default QueryingLayout

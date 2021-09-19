@@ -6,7 +6,9 @@ import MarkdownEntryList from "../components/markdown-entry-list"
 
 const BlogPostList = MarkdownEntryList(BlogPostSummary)
 
-export default ({ data }) => <BlogPostList data={data} title="Blog Posts" />
+const Blog = ({ data }) => <BlogPostList data={data} title="Blog Posts" />
+
+export default Blog
 
 export const query = graphql`
   {

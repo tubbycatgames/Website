@@ -6,7 +6,7 @@ import GameEntry from "../components/game-entry"
 
 import { content } from "./game-detail.module.styl"
 
-export default ({
+const GameDetail = ({
   data: {
     markdownRemark: { fields, frontmatter, html },
   },
@@ -16,6 +16,8 @@ export default ({
     <div className={content} dangerouslySetInnerHTML={{ __html: html }} />
   </Layout>
 )
+
+export default GameDetail
 
 export const query = graphql`
   query ($slug: String!) {

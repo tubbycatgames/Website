@@ -3,11 +3,13 @@ import { graphql } from "gatsby"
 
 import Layout from "../components/layout"
 
-export default ({ data }) => (
+const Page = ({ data }) => (
   <Layout>
     <span dangerouslySetInnerHTML={{ __html: data.markdownRemark.html }} />
   </Layout>
 )
+
+export default Page
 
 export const query = graphql`
   query {

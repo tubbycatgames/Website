@@ -6,7 +6,8 @@ import Layout from "../components/layout"
 
 import { content } from "./blog-post.module.styl"
 
-export default ({
+
+const BlogPost = ({
   data: {
     markdownRemark: {
       frontmatter: { creation, title },
@@ -19,6 +20,8 @@ export default ({
     <div className={content} dangerouslySetInnerHTML={{ __html: html }} />
   </Layout>
 )
+
+export default BlogPost
 
 export const query = graphql`
   query ($slug: String!) {

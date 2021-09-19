@@ -3,7 +3,7 @@ import React from "react"
 import Layout from "./layout"
 import { entries as entriesStyle } from "./markdown-entry-list.module.styl"
 
-export default (EntryComponent) => {
+const MarkdownEntryList = (EntryComponent) => {
   return ({ data, title }) => {
     const entries = data.allMarkdownRemark.edges.map(({ node }, index) => (
       <EntryComponent
@@ -21,3 +21,5 @@ export default (EntryComponent) => {
     )
   }
 }
+
+export default MarkdownEntryList

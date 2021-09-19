@@ -5,8 +5,9 @@ import GameEntry from "../components/game-entry"
 import MarkdownEntryList from "../components/markdown-entry-list"
 
 const GameEntryList = MarkdownEntryList(GameEntry)
+const Games = ({ data }) => <GameEntryList data={data} title="Games" />
 
-export default ({ data }) => <GameEntryList data={data} title="Games" />
+export default Games
 
 export const query = graphql`
   {
